@@ -16,19 +16,19 @@ class HomePageAlternativo extends StatelessWidget {
     );
   }
 
-  List <Widget> _crearItems() {
-    List<Widget> lista = new List<Widget>();// Lista dinamica sin tamaño
-    for (var opt in opciones) {
-      final tempWidget = ListTile(
-        title: Text(opt),
-      );
-      //lista.add(tempWidget);
-      //lista.add(Divider());
-      lista..add(tempWidget)
-          ..add(Divider());
-    }
-    return lista;
-  }
+  // List <Widget> _crearItems() {
+  //   List<Widget> lista = new List<Widget>();// Lista dinamica sin tamaño
+  //   for (var opt in opciones) {
+  //     final tempWidget = ListTile(
+  //       title: Text(opt),
+  //     );
+  //     //lista.add(tempWidget);
+  //     //lista.add(Divider());
+  //     lista..add(tempWidget)
+  //         ..add(Divider());
+  //   }
+  //   return lista;
+  // }
 
   List<Widget> _crearItemsCorto() {
     return opciones.map((item){
